@@ -1,5 +1,7 @@
 <template>
-  <div>
-    <p class="p-6">Hello there.</p>
+  <div class="p-8 flex justify-center">
+    <div class="w-[1024px]">
+      <NuxtPage></NuxtPage>
+    </div>
   </div>
 </template>

@@ -1,41 +1,29 @@
-# Nuxt 3 Minimal Starter
+# Cookbook using Nuxt 3
 
 Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
+## Backlog
+
+- database (not all recipes, just a few)
+  - name
+  - ingredients
+  - steps
+  - notes
+  - links to recipes
+- page to view each recipe
+- page for each recipe
+- scroll over step will highlight recipes used
+
 ## Setup
 
-Make sure to install the dependencies:
-
 ```bash
-# yarn
-yarn install
-
-# npm
+# install dependencies
 npm install
-
-# pnpm
-pnpm install --shamefully-hoist
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
+# run dev server
 npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
+# build for production
 npm run build
-```
-
-Locally preview production build:
-
-```bash
+# locally preview production build
 npm run preview
 ```
 
