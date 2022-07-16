@@ -13,6 +13,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 - page to view each recipe
 - page for each recipe
 - scroll over step will highlight recipes used
+- start timer from directions
 
 ## Setup
 
