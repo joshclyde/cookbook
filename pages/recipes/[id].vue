@@ -24,8 +24,7 @@ const recipe = computed(() => {
           </ul>
         </div>
         <div class="w-2/3">
-          <Heading2>Directions</Heading2>
-          <Text v-for="step in recipe.directions">{{ step }}</Text>
+          <RecipeDirections :directions="recipe.directions" />
           <Heading2 v-if="recipe.image.length > 0">Images</Heading2>
           <img class="w-32 h-32" :src="recipe.image" />
           <Heading2>Ratings</Heading2>

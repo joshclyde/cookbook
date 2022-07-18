@@ -34,7 +34,7 @@ export const useCookbook = (): Array<{
       ],
       directions: [
         "1. In a large bowl, combine chili sauce, soy sauce, lime juice, oil, Sriracha, ginger, and garlic. Whisk to combine. Add chicken breasts to bowl and toss with marinade.",
-        "2. Heat a large grill pan over medium heat. Add chicken breasts and cook until golden with grill marks and no pink remaining, 8 to 10 minutes per side. Transfer to a plate to let rest, then thinly slice.",
+        "2. Heat a large grill pan over medium heat. Add chicken breasts and cook until golden with grill marks and no pink remaining, 8 minutes per side. Transfer to a plate to let rest, then thinly slice.",
         "3. Build your lettuce cups: Fill lettuce cups with chicken and garnish with onion, carrot, and cilantro. Serve with lime wedges on the side.",
       ],
       rating: {

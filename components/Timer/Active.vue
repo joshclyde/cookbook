@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { XCircleIcon, PauseIcon, PlayIcon } from "@heroicons/vue/outline";
-import IconButton from "../Dx/IconButton.vue";
 
 const props = defineProps<{ id: string }>();
 
@@ -35,16 +34,16 @@ function clear() {
 <template>
   <div class="flex flex-col justify-center w-fit">
     <div class="flex items-center">
-      <IconButton @click="toggle">
+      <DxIconButton @click="toggle">
         <PauseIcon v-if="timer.isActive" class="h-6 w-6"></PauseIcon>
         <PlayIcon v-else class="h-6 w-6"></PlayIcon>
-      </IconButton>
+      </DxIconButton>
       <div class="w-24 flex justify-center items-center">
         <Text class="text-2xl">{{ time }}</Text>
       </div>
-      <IconButton @click="clear">
+      <DxIconButton @click="clear">
         <XCircleIcon class="h-6 w-6"></XCircleIcon>
-      </IconButton>
+      </DxIconButton>
     </div>
     <Text>{{ timer.name }}</Text>
   </div>
