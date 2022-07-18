@@ -9,7 +9,7 @@ const parsedDirections = computed(() =>
 </script>
 
 <template>
-  <DxHeading2>Directions</DxHeading2>
+  <DxHeading2>Directions 🗺</DxHeading2>
   <DxText v-for="directionsSplit in parsedDirections">
     <template v-for="directionsSlice in directionsSplit">
       <TimerInDirections
