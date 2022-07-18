@@ -39,12 +39,12 @@ function clear() {
         <PlayIcon v-else class="h-6 w-6"></PlayIcon>
       </DxIconButton>
       <div class="w-24 flex justify-center items-center">
-        <Text class="text-2xl">{{ time }}</Text>
+        <DxText class="text-2xl">{{ time }}</DxText>
       </div>
       <DxIconButton @click="clear">
         <XCircleIcon class="h-6 w-6"></XCircleIcon>
       </DxIconButton>
     </div>
-    <Text>{{ timer.name }}</Text>
+    <DxText>{{ timer.name }}</DxText>
   </div>
 </template>

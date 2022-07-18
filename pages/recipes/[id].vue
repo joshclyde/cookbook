@@ -9,14 +9,14 @@ const recipe = computed(() => {
 
 <template>
   <div>
-    <Link to="/">Home</Link>
-    <Heading1>Timers</Heading1>
+    <DxLink to="/">Home</DxLink>
+    <DxHeading1>Timers</DxHeading1>
     <Timer></Timer>
     <template v-if="recipe != null">
-      <Heading1>{{ recipe.name }}</Heading1>
+      <DxHeading1>{{ recipe.name }}</DxHeading1>
       <div class="flex">
         <div class="w-1/3">
-          <Heading2>Ingredients</Heading2>
+          <DxHeading2>Ingredients</DxHeading2>
           <ul>
             <li v-for="ingredient in recipe.ingredients">
               {{ ingredient }}
@@ -25,25 +25,25 @@ const recipe = computed(() => {
         </div>
         <div class="w-2/3">
           <RecipeDirections :directions="recipe.directions" />
-          <Heading2 v-if="recipe.image.length > 0">Images</Heading2>
+          <DxHeading2 v-if="recipe.image.length > 0">Images</DxHeading2>
           <img class="w-32 h-32" :src="recipe.image" />
-          <Heading2>Ratings</Heading2>
+          <DxHeading2>Ratings</DxHeading2>
           <p>Josh: <template v-for="n in recipe.rating.josh">⭐️</template></p>
           <p>
             Ellie: <template v-for="n in recipe.rating.ellie">⭐️</template>
           </p>
-          <Heading2> Links </Heading2>
+          <DxHeading2> Links </DxHeading2>
           <ul>
             <li v-for="alksdjf in recipe.links">
-              <Link :to="alksdjf.url">{{ alksdjf.name }}</Link>
+              <DxLink :to="alksdjf.url">{{ alksdjf.name }}</DxLink>
             </li>
           </ul>
         </div>
       </div>
     </template>
     <template v-else>
-      <Heading1> Not found. </Heading1>
-      <Text> Recipe not found. </Text>
+      <DxHeading1> Not found. </DxHeading1>
+      <DxText> Recipe not found. </DxText>
     </template>
   </div>
 </template>

@@ -9,8 +9,8 @@ const parsedDirections = computed(() =>
 </script>
 
 <template>
-  <Heading2>Directions</Heading2>
-  <Text v-for="directionsSplit in parsedDirections">
+  <DxHeading2>Directions</DxHeading2>
+  <DxText v-for="directionsSplit in parsedDirections">
     <template v-for="directionsSlice in directionsSplit">
       <TimerInDirections
         v-if="isParsedTimer(directionsSlice)"
@@ -18,5 +18,5 @@ const parsedDirections = computed(() =>
       ></TimerInDirections>
       <template v-else>{{ directionsSlice }}</template>
     </template>
-  </Text>
+  </DxText>
 </template>

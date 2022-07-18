@@ -4,11 +4,11 @@ const cookbook = useCookbook();
 
 <template>
   <div>
-    <Heading1>Cookbook</Heading1>
+    <DxHeading1>Cookbook</DxHeading1>
     <div v-for="recipe in cookbook">
-      <Link :to="`/recipes/${recipe.id}`">
+      <DxLink :to="`/recipes/${recipe.id}`">
         {{ recipe.name }}
-      </Link>
+      </DxLink>
     </div>
   </div>
 </template>
