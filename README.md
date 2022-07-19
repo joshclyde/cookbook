@@ -15,6 +15,8 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 - cooking mode
   - so, have 2 different views of the site. one view has all the recipes that are nice for us to browse. the second view is more condensed and built for ease of use when cooking. some differences could be that you don't need to see timers when just browing, and when cooking you don't need to see the ratings
 - move image to top of recipe page
+- check steps as complete? so if i have finish step 1, check it off and then it'll be crossed out
+- servings
 
 ## Setup
 

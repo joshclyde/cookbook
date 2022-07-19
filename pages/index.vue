@@ -5,8 +5,9 @@ const cookbook = useCookbook();
 <template>
   <div>
     <DxHeading1>Cookbook 📙</DxHeading1>
-    <div v-for="recipe in cookbook">
-      <DxLink :to="`/recipes/${recipe.id}`">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-2">
+      <DxLink v-for="recipe in cookbook" :to="`/recipes/${recipe.id}`">
+        <img class="w-full h-32 object-cover" :src="recipe.image" />
         {{ recipe.name }}
       </DxLink>
     </div>
