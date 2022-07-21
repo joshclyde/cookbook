@@ -29,22 +29,31 @@ function toggle() {
 function clear() {
   timersStore.clear(props.id);
 }
+
+const name = computed({
+  get() {
+    return timer.value.name;
+  },
+  set(value) {
+    timersStore.setName(props.id, value);
+  },
+});
 </script>
 
 <template>
-  <div class="flex flex-col justify-center w-fit">
+  <div class="flex flex-col justify-center w-36">
     <div class="flex items-center">
-      <DxIconButton @click="toggle">
-        <PauseIcon v-if="timer.isActive" class="h-6 w-6"></PauseIcon>
-        <PlayIcon v-else class="h-6 w-6"></PlayIcon>
+      <DxIconButton @click="toggle" class="h-6 w-6">
+        <PauseIcon v-if="timer.isActive"></PauseIcon>
+        <PlayIcon v-else></PlayIcon>
       </DxIconButton>
       <div class="w-24 flex justify-center items-center">
         <DxText class="text-2xl">{{ time }}</DxText>
       </div>
-      <DxIconButton @click="clear">
-        <XCircleIcon class="h-6 w-6"></XCircleIcon>
+      <DxIconButton @click="clear" class="h-6 w-6">
+        <XCircleIcon></XCircleIcon>
       </DxIconButton>
     </div>
-    <DxText>{{ timer.name }}</DxText>
+    <input class="border border-orange-400 rounded-sm pl-1" v-model="name" />
   </div>
 </template>

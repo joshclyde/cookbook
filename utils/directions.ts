@@ -6,6 +6,7 @@ export const parseDirections = (value: string) => {
     - seconds
     - hours
     - 8 to 10 minutes
+    - maybe do something like if I find "minutes" then see if there is a number a few words before it
 
     Alternatively, just change the text of the directions to be X minutes
   */

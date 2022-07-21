@@ -2,7 +2,7 @@ import { defineStore } from "pinia";
 import { nanoid } from "nanoid";
 
 interface Timer {
-  name?: string;
+  name: string;
   seconds: number;
   ticksMS: number;
   isActive: boolean;
@@ -24,7 +24,7 @@ export const useTimersStore = defineStore({
   id: "timers",
   state: () => initState,
   actions: {
-    add(seconds: number, name?: string) {
+    add(seconds: number, name: string) {
       this.timers[nanoid()] = { seconds, name, ticksMS: 0, isActive: false };
     },
     play(id: string) {
@@ -48,6 +48,9 @@ export const useTimersStore = defineStore({
     },
     clear(id: string) {
       delete this.timers[id];
+    },
+    setName(id: string, name: string) {
+      this.timers[id].name = name;
     },
   },
   getters: {

@@ -4,7 +4,7 @@ Look at the [nuxt 3 documentation](https://v3.nuxtjs.org) to learn more.
 
 ## Backlog
 
-- make home page a bit prettier
+- bug: paused timers automatically play when switching between pages
 - scroll over step in directions will highlight ingredients used
 - ingredients sectioned out (for the chicken, ..., for the sauce, ...)
 - linking recipes
