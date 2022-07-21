@@ -25,9 +25,7 @@ export const useTimersStore = defineStore({
   state: () => initState,
   actions: {
     add(seconds: number, name: string) {
-      this.timers[nanoid()] = { seconds, name, ticksMS: 0, isActive: false };
-    },
-    play(id: string) {
+      this.timers[nanoid()] = { seconds, name, ticksMS: 0, isActive: true };
       if (this.intervalId == null) {
         this.latestUpdate = Date.now();
         this.intervalId = setInterval(() => {
@@ -41,6 +39,8 @@ export const useTimersStore = defineStore({
           }
         }, 1000) as any;
       }
+    },
+    play(id: string) {
       this.timers[id].isActive = true;
     },
     pause(id: string) {

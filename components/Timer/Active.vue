@@ -4,7 +4,6 @@ import { XCircleIcon, PauseIcon, PlayIcon } from "@heroicons/vue/outline";
 const props = defineProps<{ id: string }>();
 
 const timersStore = useTimersStore();
-timersStore.play(props.id);
 
 const timer = computed(() => {
   return timersStore.id(props.id);
