@@ -10,8 +10,7 @@ const recipe = computed(() => {
 <template>
   <div>
     <DxLink to="/">Home</DxLink>
-    <DxHeading1>Timers ⏰</DxHeading1>
-    <Timer></Timer>
+    <TimerSection />
     <template v-if="recipe != null">
       <DxHeading1>{{ recipe.name }}</DxHeading1>
       <div class="flex">

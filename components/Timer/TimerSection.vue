@@ -4,6 +4,7 @@ const timersStore = useTimersStore();
 
 <template>
   <div>
+    <DxHeading1>Timers ⏰</DxHeading1>
     <div class="mb-4">
       <TimerQuickStart :seconds="60 * 5"></TimerQuickStart>
       <TimerQuickStart :seconds="60 * 10"></TimerQuickStart>
