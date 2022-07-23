@@ -20,8 +20,7 @@ const recipe = computed(() => {
         </div>
         <div class="w-2/3">
           <RecipeDirections :directions="recipe.directions" />
-          <DxHeading2 v-if="recipe.image.length > 0">Images 📷</DxHeading2>
-          <img class="w-32 h-32" :src="recipe.image" />
+          <RecipeImage :image="recipe.image" />
           <DxHeading2>Ratings ⭐️</DxHeading2>
           <p>Josh: <template v-for="n in recipe.rating.josh">⭐️</template></p>
           <p>
