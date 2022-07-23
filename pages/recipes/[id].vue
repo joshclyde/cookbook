@@ -21,11 +21,7 @@ const recipe = computed(() => {
         <div class="w-2/3">
           <RecipeDirections :directions="recipe.directions" />
           <RecipeImage :image="recipe.image" />
-          <DxHeading2>Ratings ⭐️</DxHeading2>
-          <p>Josh: <template v-for="n in recipe.rating.josh">⭐️</template></p>
-          <p>
-            Ellie: <template v-for="n in recipe.rating.ellie">⭐️</template>
-          </p>
+          <RecipeRatings :rating="recipe.rating" />
           <DxHeading2>Links 🖇</DxHeading2>
           <ul>
             <li v-for="alksdjf in recipe.links">
