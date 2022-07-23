@@ -22,12 +22,7 @@ const recipe = computed(() => {
           <RecipeDirections :directions="recipe.directions" />
           <RecipeImage :image="recipe.image" />
           <RecipeRatings :rating="recipe.rating" />
-          <DxHeading2>Links 🖇</DxHeading2>
-          <ul>
-            <li v-for="alksdjf in recipe.links">
-              <DxLink :to="alksdjf.url">{{ alksdjf.name }}</DxLink>
-            </li>
-          </ul>
+          <RecipeLinks :links="recipe.links" />
         </div>
       </div>
     </template>
