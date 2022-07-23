@@ -16,12 +16,7 @@ const recipe = computed(() => {
       <DxHeading1>{{ recipe.name }}</DxHeading1>
       <div class="flex">
         <div class="w-1/3">
-          <DxHeading2>Ingredients 🧂</DxHeading2>
-          <ul>
-            <li v-for="ingredient in recipe.ingredients">
-              {{ ingredient }}
-            </li>
-          </ul>
+          <RecipeIngredients :ingredients="recipe.ingredients" />
         </div>
         <div class="w-2/3">
           <RecipeDirections :directions="recipe.directions" />
