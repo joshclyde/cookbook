@@ -10,18 +10,20 @@ const recipe = computed(() => {
 <template>
   <div>
     <DxLink to="/">Home</DxLink>
-    <TimerSection />
     <template v-if="recipe != null">
       <DxHeading1>{{ recipe.name }}</DxHeading1>
-      <div class="flex">
-        <div class="w-1/3">
+      <div class="flex lg:flex-row flex-col gap-2 xl:gap-8">
+        <div class="basis-52 shrink-0">
           <RecipeIngredients :ingredients="recipe.ingredients" />
         </div>
-        <div class="w-2/3">
+        <div>
           <RecipeDirections :directions="recipe.directions" />
-          <RecipeImage :image="recipe.image" />
+        </div>
+        <div class="basis-44 shrink-0">
+          <TimerSection />
           <RecipeRatings :rating="recipe.rating" />
           <RecipeLinks :links="recipe.links" />
+          <RecipeImage :image="recipe.image" />
         </div>
       </div>
     </template>
