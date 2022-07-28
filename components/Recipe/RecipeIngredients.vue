@@ -4,8 +4,8 @@ defineProps<{ ingredients: Array<string> }>();
 
 <template>
   <DxHeading2>Ingredients 🧂</DxHeading2>
-  <ul>
-    <li v-for="ingredient in ingredients">
+  <ul className="divide-y">
+    <li v-for="ingredient in ingredients" className="py-1">
       {{ ingredient }}
     </li>
   </ul>
