@@ -179,5 +179,43 @@ export const useCookbook = (): Array<{
         },
       ],
     },
+    {
+      id: "garlic_butter_steak_potato",
+      name: "Garlic Butter Steak and Potatoes",
+      ingredients: [
+        "1 1/2 lb (650g) flank steak, sliced against the grain (or ribeye steak, tenderloin, strip loin, strip steak…)",
+        "1 1/2 lb (650g) baby yellow potatoes, quartered",
+        "1 tablespoon olive oil",
+        "3 tablespoons butter, divided",
+        "5 garlic cloves, minced",
+        "1 teaspoon fresh thyme, chopped",
+        "1 teaspoon fresh rosemary, chopped",
+        "1 teaspoon fresh oregano, chopped",
+        "Salt and fresh cracked pepper",
+        "Crushed red chili pepper flakes, optional",
+        "1/3 cup soy sauce (or coconut amino for paleo and gluten-free)",
+        "1 tablespoon olive oil",
+        "1 tablespoon hot sauce (we used Sriracha)",
+        "Fresh cracked pepper",
+      ],
+      directions: [
+        "1. To prepare the garlic butter steak recipe with potatoes wedges: In a large bowl, combine the steak strips with soy sauce, olive oil, pepper, and hot sauce. Set aside and allow steak strips to marinate while you cook potatoes.",
+        "2. In a large skillet over medium-high heat, mix 1 tablespoon olive oil and 1 tablespoon butter. When butter is melted, add potatoes wedges. Cook for about 4 minutes, stir and cook an additional 4-5 minutes until potatoes wedges are golden and fork-tender. Transfer sauteed potatoes to a plate and set aside.",
+        "3. Keep the same skillet over medium heat and add the remaining 2 tablespoons of butter, garlic, red chili pepper flakes, and fresh herbs. Lay the steak strips in one layer in the skillet, keeping the drained steak marinade for later. Cook the steak strips on each side for 1 minute each, until nicely browned – adjust timing depending on how you like your steak.",
+        "4. Right before the Garlic Butter steak is done, you can stir in the reserved marinade if you like, and cook for one minute. Add the potatoes wedges back to the garlic butter steak pan and heat through. Adjust seasoning with salt and pepper if necessary.",
+        "5. Remove from heat and serve immediately your steak and potatoes, garnished with more crushed chili pepper, fresh herbs, and a sprinkle of parmesan cheese over the potatoes if you like. Enjoy!",
+      ],
+      rating: {
+        josh: 5,
+        ellie: 1,
+      },
+      image: "/images/garlic_butter_steak_potato.png",
+      links: [
+        {
+          name: "Original Recipe",
+          url: "https://www.eatwell101.com/garlic-butter-steak-and-potatoes-recipe",
+        },
+      ],
+    },
   ];
 };
